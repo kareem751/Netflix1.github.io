@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/NetflixIcon.ico">
+    <link rel="stylesheet" href="moviezone.css">
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+    <style>
+     
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    margin: 5px;
+}
+
+.head img{
+    position: relative;
+    width: 11%;
+    z-index: 1;
+    margin-left: 10px;
+    margin-top: -15px;
+    margin-bottom: -14px;
+}
+
+.home-image{
+    background-image: url(/Images//hoome.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    border-radius: 20px;
+    position: relative;
+    filter: brightness();
+}
+
+.home-image-text{
+    color: aliceblue;
+    position: relative;
+    width: 30%;
+    top: 13em;
+    left:3em;
+    z-index: 1;
+}
+
+.money{
+    width: 100%;
+    height: auto;
+}
+
+.play-button{
+    background-color: red;
+    color: black;
+    border-radius: 4px;
+    width: 70px;
+    padding: 5px 20px 0px;
+    font-size: 25px;
+}
+
+.play-button img{
+    margin-top: 0px;
+    padding-left: 5px;
+    width: 25px;
+    position: absolute;
+}
+/* Netflix Originals Top Rated */
+
+#slider{
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 10s slider infinite;
+    display: flex;
+    height: 55vh;
+    padding-top: 2px;
+    margin-left: 0px;
+    margin-bottom: -50px;
+    overflow-y: hidden;
+}
+#slider figure img{
+    width: 20%;
+    float: left;
+    width: 180px;
+    height: 280px;
+    margin: 3px;
+    margin-top: 30px;
+    margin-left: 8px;
+    border-radius: 10px;
+}
+@keyframes slider{
+    0%{
+        left:0;
+    }
+    20%{
+        left:0;
+    }
+    25%{
+        left: -50%;
+    }
+    45%{
+        left: -50%;
+    }
+}
+#slider .notitle{
+    font-size: 20px;
+    padding-left: 10px;
+    color: white;
+    line-height: 1px;
+    font-weight: 5px;
+    margin-top: 30px;
+    /* margin-bottom: -10px; */
+
+}
+#slider figure img:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+    transition-delay: 0.1s;
+    filter: brightness(70%);
+}
+
+
+/* Popular Movies Hollywood Movies */
+#slider1{
+    overflow: hidden;
+}
+#slider1 figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 40s slider infinite;
+    display: flex;
+    height: 55vh;
+    padding-top: 2px;
+    margin-left: 0px;
+    margin-bottom: -160px;
+    overflow-y: hidden;
+}
+#slider1 figure img{
+    width: 20%;
+    float: left;
+    width: 132px;
+    height: 180px;
+    margin: 3px;
+    margin-top: 30px;
+    margin-left: 8px;
+    border-radius: 10px;
+}
+@keyframes slider1{
+    0%{
+        left:0;
+    }
+    20%{
+        left:0;
+    }
+    25%{
+        left: -150%;
+    }
+    45%{
+        left: -150%;
+    }
+}
+#slider1 .notitle1{
+    position: relative;
+    font-size: 20px;
+    padding-left: 10px;
+    color: white;
+    line-height: 1px;
+    font-weight: 5px;
+    margin-top: 10px;
+   
+
+}
+#slider1 figure img:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+    transition-delay: 0.1s;
+    filter: brightness(70%);
+}
+
+/* slider2 */
+#slider2{
+    overflow: hidden;
+}
+#slider2 figure{
+    position: relative;
+    width: 400%;
+    margin: 0;
+    left: 0;
+    animation: 30s slider infinite;
+    display: flex;
+    height: 55vh;
+    padding-top: 2px;
+    margin-left: 0px;
+    margin-bottom: -160px;
+    overflow-y: hidden;
+}
+#slider2 figure img{
+    position: relative;
+    /* width: 20%; */
+    float: left;
+    width: 132px;
+    height: 180px;
+    margin: 3px;
+    margin-top: 30px;
+    margin-left: 8px;
+    border-radius: 10px;
+}
+@keyframes slider2{
+    0%{
+        left:0;
+    }
+    20%{
+        left:0;
+    }
+    25%{
+        left: -150%;
+    }
+    45%{
+        left: -150%;
+    }
+}
+#slider2 .notitle2{
+    /* position: relative; */
+    font-size: 20px;
+    padding-left: 10px;
+    color: white;
+    line-height: 1px;
+    font-weight: 5px;
+    margin-top: 40px;
+   
+
+}
+#slider2 figure img:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+    transition-delay: 0.1s;
+    filter: brightness(70%);
+}
+
+
+/* slider3 */
+
+#slider3{
+    overflow: hidden;
+}
+#slider3 figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 40s slider infinite;
+    display: flex;
+    height: 55vh;
+    padding-top: 2px;
+    margin-left: 0px;
+    margin-bottom: -160px;
+    overflow-y: hidden;
+}
+#slider3 figure img{
+    position: relative;
+    /* width: 20%; */
+    float: left;
+    width: 132px;
+    height: 180px;
+    margin: 3px;
+    margin-top: 30px;
+    margin-left: 8px;
+    border-radius: 10px;
+}
+@keyframes slider3{
+    0%{
+        left:0;
+    }
+    20%{
+        left:0;
+    }
+    25%{
+        left: -150%;
+    }
+    45%{
+        left: -150%;
+    }
+}
+#slider3 .notitle3{
+    /* position: relative; */
+    font-size: 20px;
+    padding-left: 10px;
+    color: white;
+    line-height: 1px;
+    font-weight: 5px;
+    margin-top: 10px;
+   
+
+}
+#slider3 figure img:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+    transition-delay: 0.1s;
+    filter: brightness(70%);
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <section class="container">
+        <div class="head">
+            <img src="/Images//NetflixLogo.png" alt="">
+        </div>
+    </section>
+    <div class="home-image">
+        <div class="home-image-text">
+            <img class="money" src="/Images//monetharis.png" alt="" >
+            <p class="p1">
+                Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal mastermind manipulates the police to carry out his plan.
+            </p>
+            <a style="text-decoration: none;" href="/Images/MoneyH.mp4">
+            <p class="play-button">Play
+                <img src="/Images/play.png" alt="">
+            </p>
+            </a>
+        </div>
+    </div>
+
+    
+    <div id="slider">
+        <h3 class="notitle"> Netflix Original</h3>
+        <figure>
+            <img src="/Images/a1.jpg" alt="">
+            <img src="/Images/a2.jpg" alt="">
+            <img src="/Images/a1.jpg" alt="">
+            <img src="/Images/a3.jpg" alt="">
+            <img src="/Images/a4.jpg" alt="">
+            <img src="/Images/a5.jpg" alt="">
+            <img src="/Images/a6.jpg" alt="">
+            <img src="/Images/a7.jpg" alt="">
+            <img src="/Images/a8.webp" alt="">
+            <img src="/Images/a9.jpg" alt="">
+            <!-- <img src="/Images/a10.webp" alt=""> -->
+            <img src="/Images/a11.jpg" alt="">
+            <img src="/Images/a7.jpg" alt="">
+            <!-- <img src="/Images/a8.webp" alt=""> -->
+           
+        </figure>
+
+    </div>
+    <div id="slider1">
+        <h3 class="notitle1"> Netflix Trending</h3>
+        <figure>
+            <img src="/Images/a12.jpg" alt="">
+            <img src="/Images/a13.jpg" alt="">
+            <img src="/Images/a14.jpg" alt="">
+            <img src="/Images/a15.jpg" alt="">
+            <img src="/Images/poster14.jpg" alt="">
+            <img src="/Images/poster15.jpg" alt="">
+            <img src="/Images/poster16.jpg" alt="">
+            <img src="/Images/poster17.jpg" alt="">
+            <img src="/Images/poster18.jpg" alt="">
+            <img src="/Images/poster19.jpg" alt="">
+            <img src="/Images/poster22 (1).jpeg" alt="">
+            <img src="/Images/poster22 (1).webp" alt="">
+            <img src="/Images/poster22 (10).jpg" alt="">
+            <img src="/Images/poster22 (11).jpg" alt="">
+            <img src="/Images/poster22 (12).jpg" alt="">
+            <img src="/Images/poster13.jpg" alt="">
+           
+        </figure>
+
+    </div>
+
+    
+
+    <div id="slider2">
+        <h3 class="notitle2">Popular Movies</h3>
+        <figure>
+            <img src="/Images/poster22 (14).jpg" alt="">
+            <img src="/Images/poster22 (15).jpg" alt="">
+            <img src="/Images/poster22 (16).jpg" alt="">
+            <img src="/Images/poster22 (17).jpg" alt="">
+            <img src="/Images/poster22 (18).jpg" alt="">
+            <img src="/Images/poster22 (19).jpg" alt="">
+            <img src="/Images/poster22 (2).jpg" alt="">
+            <img src="/Images/poster22 (20).jpg" alt="">
+            <img src="/Images/poster22 (21).jpg" alt="">
+            <img src="/Images/poster22 (23).jpg" alt="">
+            <img src="/Images/poster22 (3).jpg" alt="">
+            <img src="/Images/poster22 (4).jpg" alt="">
+            <img src="/Images/poster22 (5).jpg" alt="">
+            <img src="/Images/poster22 (6).jpg" alt="">
+            <img src="/Images/poster22 (7).jpg" alt="">
+            <img src="/Images/poster22 (8).jpg" alt="">
+        </figure>
+    </div>
+
+    <div id="slider3">
+        <h3 class="notitle3">Hollywood Movies</h3>
+        <figure>
+            <img src="/Images/poster22 (9).jpg" alt="">
+            <img src="/Images/poster3(1).jfif" alt="">
+            <img src="/Images/poster4(1).jfif" alt="">
+            <img src="/Images/poster5.jpg" alt="">
+            <img src="/Images/poster6(1).jfif" alt="">
+            <img src="/Images/poster6.jfif" alt="">
+            <img src="/Images/poster7.jfif" alt="">
+            <img src="/Images/poster8.jfif" alt="">
+            <img src="/Images/poster9.jfif" alt="">
+            <img src="/Images/poster22 (9).jpg" alt="">
+            <img src="/Images/img2.jpeg" alt="">
+            <img src="/Images/poster3.jfif" alt="">
+            <img src="/Images/poster9.jfif" alt="">
+            <img src="/Images/poster4(1).jfif" alt="">
+            <img src="/Images/poster6(1).jfif" alt="">
+            <img src="/Images/poster9.jfif" alt="">
+        </figure>
+    </div>
+
+</body>
+</html>
